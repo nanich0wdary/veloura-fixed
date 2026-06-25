@@ -1,0 +1,49 @@
+# =============================================================
+#  Veloura — .gitignore
+#  Flutter + Android + Docker
+# =============================================================
+
+# ── Flutter build output ──
+build/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+
+# ── Dart ──
+.pub-cache/
+.pub/
+**/doc/api/
+
+# ── Android ──
+**/android/.gradle
+**/android/captures/
+**/android/gradlew
+**/android/gradlew.bat
+**/android/local.properties
+**/android/**/GeneratedPluginRegistrant.java
+**/android/app/build/
+**/android/key.properties
+
+# ── Signing keys — NEVER commit these ──
+*.keystore
+*.jks
+key.properties
+
+# ── Docker output ──
+output/
+
+# ── IDE ──
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.DS_Store
+
+# ── OS ──
+Thumbs.db
+**/.DS_Store
+
+# ── Logs ──
+*.log
